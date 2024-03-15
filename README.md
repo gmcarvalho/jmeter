@@ -281,6 +281,69 @@ ___
 
 No diretório vai ter alguns arquivos de plano de teste, se baixá-los é possível reutilizar no seu jmeter. 
 
+___
+
+### Algumas outras dicas
+
+<details>
+  <summary> Como baixar o plugin e utilizá-lo?  </summary>
+
+  * Basta acessar o [link](https://jmeter-plugins.org/install/Install/) e baixar o `plugins-manager.jar`
+
+  * Salvar o jar na pasta `jmeter/lib/ext`
+
+  * Reiniciar o Jmeter 
+</details>
+
+<details>
+  <summary> O que é o teste assistido?  </summary>
+
+  Test Script Recorder
+
+  Ao invés de configurar os componentes. O Jmeter grava todas as ações durante a navegação real na tela.
+
+  Vamos entender um pouco mais:
+
+  ```mermaid
+  graph TD;
+      JMETER <--> SERVER;
+  ```
+
+  Esse é o fluxo que configuramos de forma manual. 
+  
+  Agora vamos ver como seria pra executar o teste recorder:
+
+   ```mermaid
+    graph TD;
+        JMETER <-- PROXY_SERVER;
+        PROXY_SERVER <--> SERVER;
+  ```
+
+  Ao invés de criar um plano de teste, configura o proxy server no browser com o proxy que instanciar no Jmeter, e ao navegaar na sua aplicação
+  todas as requisições que você fizer, vai passar pelo proxy server e automaticamente elas vão ser registradas no Jmeter. 
+
+  Para usar o Test Recorder:
+  
+  ![recrding](https://github.com/gmcarvalho/jmeter/assets/33256112/e30a5ba0-eaf1-43c5-9bff-c05ac79539c1)
+
+  Para entender melhor é bom buscar mais informações na documentação. 
+  
+</details>
+
+<details>
+  <summary> Como alterar o idioma? </summary>
+  
+  ![idioma](https://github.com/gmcarvalho/jmeter/assets/33256112/8fd6dd6c-6dcc-4979-971e-11404b2fc590)
+
+</details>
+
+<details>
+  <summary> Como alterar o tema?  </summary>
+  
+  ![tema](https://github.com/gmcarvalho/jmeter/assets/33256112/f681e5b3-08b3-4718-8edc-7bd6a53c6cca)
+
+  
+</details>
 
 
 
